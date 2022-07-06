@@ -145,7 +145,7 @@ export default {
     },
     currentZone:{
       handler(newvalue, oldvalue){      
-        console.log(this.nowTime.replace(/\..*/, 'Z'))
+      //console.log(this.nowTime.replace(/\..*/, 'Z'))
         var jun = moment(this.nowTime.replace(/\..*/, 'Z'));
         this.localTime = jun.tz(this.currentZone).format('ha z')
 
