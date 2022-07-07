@@ -109,7 +109,7 @@ export default {
           lat: this.existingPlace.geometry.location.lat(),
           lng: this.existingPlace.geometry.location.lng()
         };
-        this.locationMarkers.push({ position: marker });
+        this.locationMarkers.unshift({ position: marker });
         this.locPlaces.push(this.existingPlace);
         this.center = marker;
 
